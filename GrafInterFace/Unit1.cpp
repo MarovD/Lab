@@ -26,7 +26,7 @@ void __fastcall TForm1::Button2Click(TObject *Sender)
 
 	PMyName MyName;
 	MyName =(PMyName)GetProcAddress(MyDLL,"MyName");
-    int length=80;
+    	int length=80;
 	wchar_t *a=new wchar_t[length];
 	Label1->Caption=MyName(a,length);
 }
